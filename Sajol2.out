@@ -1,0 +1,101 @@
+
+**** 12/03/18 19:28:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Sajol2"  [ D:\Assignment signal\sajol-pspicefiles\schematic1\sajol2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Sajol2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sajol\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 100 800k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SAJOL
+V_V1         N000400 0 DC 0Vdc AC 1Vac 
+R_R1         0 N00443  3.9k TC=0,0 
+R_R3         N00375 N00350  3.9k TC=0,0 
+R_R4         N00401 N00375  3.9k TC=0,0 
+R_R9         N00320 N00316  3.9k TC=0,0 
+R_R10         0 N00320  3.9k TC=0,0 
+R_R7         N00489 N00375  2.2k TC=0,0 
+R_R8         0 N00489  3.9k TC=0,0 
+C_C1         N00350 N00316  910p  TC=0,0 
+C_C2         N000400 N00401  1100p  TC=0,0 
+C_C3         N00401 N00443  1100p  TC=0,0 
+C_C4         0 N00508  910p  TC=0,0 
+E_U1         N00316 0 VALUE {LIMIT(V(N00508,N00320)*1E6,-15V,+15V)}
+E_U2         N00375 0 VALUE {LIMIT(V(N00443,N00489)*1E6,-15V,+15V)}
+R_R11         N00350 N00508  3.9k TC=0,0 
+
+**** RESUMING Sajol2.cir ****
+.END
+
+**** 12/03/18 19:28:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Sajol2"  [ D:\Assignment signal\sajol-pspicefiles\schematic1\sajol2.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00316)    0.0000 (N00320)    0.0000 (N00350)    0.0000 (N00375)    0.0000     
+
+(N00401)    0.0000 (N00443)    0.0000 (N00489)    0.0000 (N00508)    0.0000     
+
+(N000400)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/03/18 19:28:26 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Sajol2"  [ D:\Assignment signal\sajol-pspicefiles\schematic1\sajol2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
